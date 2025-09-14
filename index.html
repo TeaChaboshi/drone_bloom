@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -14,10 +14,10 @@
     <meta name="theme-color" content="#0aff57" />
 
     <!-- Monospace font (system first, fallback to DM Mono) -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
 
-    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/main.css" />
 </head>
 
 <body>
@@ -28,277 +28,244 @@
             <div>
                 <span class="kicker">Pollinator-safe orchard automation</span>
                 <h1>
-                    Matrix-grade <span class="accent">drones</span> for smarter orchards.
+                    Smarter <span class="accent">drones</span> for
+                    smarter orchards.
                 </h1>
                 <p class="lead">
-                    Drone Bloom explores drone-based blossom thinning and geospatial mapping to reduce pesticide
-                    reliance and protect pollinators—starting with apple orchards.
+                    Drone Bloom explores drone-based blossom thinning and
+                    geospatial mapping to reduce pesticide reliance and
+                    protect pollinators—starting with apple orchards.
                 </p>
-                <div class="cta">
-                    <a class="btn" href="#contact">Get in touch</a>
-                    <a class="btn secondary" href="#about">Learn more</a>
-                </div>
             </div>
             <div class="panel">
                 <div class="pad">
-                    <h3 style="margin:.25rem 0 .5rem;">Project Snapshot</h3>
-                    <p class="meta">
-                        • Blossom thinning via robotics<br />
-                        • Orchard tree mapping (≤20 cm RMSE)<br />
-                        • Multi-drone simulation &amp; field pilots<br />
-                        • Open datasets &amp; reproducible tooling
-                    </p>
+                    <figure class="shot" aria-label="Top-down mapping pass">
+                        <svg viewBox="0 0 800 600" role="img" aria-labelledby="svg2title svg2desc">
+                            <title id="svg2title">Top-down mapping pass</title>
+                            <desc id="svg2desc">
+                                Grid mission lines with waypoints over orchard
+                                tiles; drones following paths.
+                            </desc>
+                            <defs>
+                                <pattern id="tiles" width="80" height="80" patternUnits="userSpaceOnUse">
+                                    <rect width="80" height="80" fill="#08140f" />
+                                    <circle cx="24" cy="24" r="12" fill="#0f2419" stroke="#17633a" />
+                                    <circle cx="56" cy="56" r="12" fill="#0f2419" stroke="#17633a" />
+                                </pattern>
+                            </defs>
+                            <rect width="800" height="600" fill="url(#tiles)" />
+                            <!-- Grid mission -->
+                            <g stroke="#0aff57" stroke-opacity=".5">
+                                <path d="M100,80 L700,80" />
+                                <path d="M100,130 L700,130" />
+                                <path d="M100,180 L700,180" />
+                                <path d="M100,230 L700,230" />
+                                <path d="M100,280 L700,280" />
+                                <path d="M100,330 L700,330" />
+                                <path d="M100,380 L700,380" />
+                                <path d="M100,430 L700,430" />
+                            </g>
+                            <!-- Waypoints -->
+                            <g fill="#0aff57">
+                                <circle cx="120" cy="80" r="3" />
+                                <circle cx="680" cy="80" r="3" />
+                                <circle cx="120" cy="130" r="3" />
+                                <circle cx="680" cy="130" r="3" />
+                                <circle cx="120" cy="180" r="3" />
+                                <circle cx="680" cy="180" r="3" />
+                                <circle cx="120" cy="230" r="3" />
+                                <circle cx="680" cy="230" r="3" />
+                                <circle cx="120" cy="280" r="3" />
+                                <circle cx="680" cy="280" r="3" />
+                                <circle cx="120" cy="330" r="3" />
+                                <circle cx="680" cy="330" r="3" />
+                            </g>
+                            <!-- Drone icons -->
+                            <g stroke="#0aff57" fill="none">
+                                <rect x="260" y="72" width="24" height="16" rx="3" />
+                                <rect x="520" y="172" width="24" height="16" rx="3" />
+                                <rect x="300" y="322" width="24" height="16" rx="3" />
+                            </g>
+                        </svg>
+                    </figure>
                 </div>
             </div>
+
         </section>
 
-        <section id="about" class="container" style="padding-top:1rem;">
+        <section id="about" class="container" style="padding-top: 1rem">
             <div class="grid">
-                <div class="col-8">
+                <div class="col-6">
+
+                </div>
+                <div class="col-12">
                     <div class="card">
                         <h3>Why Drone Bloom?</h3>
                         <p>
                             Many orchards use chemical thinning (e.g., Sevin) to manage bloom density. Drone Bloom
-                            investigates a robotics alternative—precise, data-driven thinning and mapping—to lower
-                            chemical load while sustaining yield and protecting pollinators.
+                            explores a precise, cost-effective, data-driven robotic alternative that reduces chemical
+                            use while sustaining yields and protecting pollinators.
                         </p>
-                        <p class="meta">
-                            Goals: <em>95% accurate stem thinning</em>, <em>high-precision tree geolocation</em>, and
-                            practical workflows orchards can adopt.
-                        </p>
+
+                        <div class="meta" style="margin-top:.5rem;">
+                            <strong>Project Goals</strong>
+                            <ul class="meta" style="padding-left:1.2rem; margin:.4rem 0;">
+                                <li>Assess the ecological impact of Sevin (carbaryl) on pollinators. <span
+                                        class="cite">(Tessenderlo Kerley, Inc., 2013)</span></li>
+                                <li>Analyze the prevalence and application practices of Sevin use on apple orchards
+                                    across the United States.</li>
+                                <li>Establish collaborative relationships with one or more orchards to support future
+                                    research and field experiments.</li>
+                                <li>Partner with the Robotarium at Georgia Tech to design and implement a 3D drone
+                                    testing environment.</li>
+                                <li>Prototype an espalier-based orchard architecture optimized for full automation.
+                                    <span class="cite">(Wisconsin Division of Extension, 2025)</span>
+                                </li>
+                                <li>Develop a robotic arm prototype capable of thinning apple stems with at least 95%
+                                    accuracy.</li>
+                                <li>Build and test a drone system capable of generating accurate geospatial maps of
+                                    orchard tree locations.</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="col-4">
-                    <div class="card">
-                        <h3>Tech Focus</h3>
-                        <p class="meta">
-                            PX4/ArduPilot • MAVSDK-Python • OpenDroneMap/OpenSfM • OpenCV • GeoPandas • Open3D • ROS 2 +
-                            MoveIt (for arm)
-                        </p>
-                    </div>
-                </div>
+
             </div>
             <div class="wire" aria-hidden="true"></div>
         </section>
 
         <section id="tech" class="container">
             <div class="grid">
-                <div class="col-4">
+                <div class="col-6">
                     <div class="card">
-                        <h3>Mapping</h3>
-                        <p class="meta">Photogrammetry (ODM/OpenSfM) → orthos/point clouds → canopy segmentation → tree
-                            centroids → <code>GeoJSON</code>.</p>
+                        <h3>Robotic Arm Technologies</h3>
+                        <ul class="meta" style="padding-left:1rem; margin:.25rem 0;">
+                            <li><strong>Perception:</strong> <code>opencv-python</code>, <code>numpy</code>,
+                                <code>scikit-image</code>, <code>open3d</code>, <code>apriltag</code>
+                            </li>
+                            <li><strong>Detection/Segmentation:</strong> <code>ultralytics</code> (YOLOv8),
+                                <code>torch</code>,
+                                <code>torchvision</code>, <code>detectron2</code> or <code>mmdetection</code>,
+                                <code>segment-anything</code>
+                            </li>
+                            <li><strong>Robotics & Planning:</strong> <code>rclpy</code> (ROS 2),
+                                <code>moveit_commander</code>
+                                / MoveIt 2 Python, <code>ikpy</code>, <code>modern_robotics</code>,
+                                <code>pybullet</code>,
+                                <code>mujoco</code>
+                            </li>
+                            <li><strong>Math / Utils:</strong> <code>scipy</code>, <code>control</code>,
+                                <code>trimesh</code>,
+                                <code>shapely</code>, <code>pyyaml</code>, <code>pydantic</code>
+                            </li>
+                            <li><strong>Data & Labeling:</strong> <code>label-studio-sdk</code> or
+                                <code>cvat-sdk</code>,
+                                <code>albumentations</code>, <code>wandb</code> (optional)
+                            </li>
+                            <li><strong>Camera:</strong> <code>pyrealsense2</code> (or ZED Python)</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-6">
                     <div class="card">
-                        <h3>Perception</h3>
-                        <p class="meta">OpenCV/torch for blossom &amp; pedicel detection; RealSense/ZED depth; RTK/PPK
-                            for cm-level geotags.</p>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card">
-                        <h3>Control</h3>
-                        <p class="meta">MAVSDK mission grids; ROS 2 nodes for arm servoing; safety interlocks;
-                            reproducible pipelines.</p>
+                        <h3>Drone Mapping Technologies</h3>
+                        <ul class="meta" style="padding-left:1rem; margin:.25rem 0;">
+                            <li><strong>Core Geo:</strong> <code>geopandas</code>, <code>shapely</code>,
+                                <code>pyproj</code>,
+                                <code>rasterio</code>, <code>gdal</code>, <code>rtree</code>
+                            </li>
+                            <li><strong>Vision / 3D:</strong> <code>opencv-python</code>, <code>scikit-image</code>,
+                                <code>open3d</code>, <code>laspy</code>, <code>scikit-learn</code>
+                            </li>
+                            <li><strong>Flight:</strong> <code>mavsdk</code>, <code>pymavlink</code></li>
+                            <li><strong>Math / Utils:</strong> <code>numpy</code>, <code>pandas</code>,
+                                <code>matplotlib</code>,
+                                <code>pydantic</code>, <code>tqdm</code>
+                            </li>
+                            <li><strong>Data & Labeling:</strong> <code>label-studio-sdk</code> or
+                                <code>cvat-sdk</code>,
+                                <code>albumentations</code>
+                            </li>
+                            <li><strong>Camera:</strong> Global shutter cameras; Sony series; industrial USB</li>
+                        </ul>
                     </div>
                 </div>
             </div>
+
         </section>
 
-        <section id="gallery" class="container">
-            <h2 style="margin:0 0 1rem; font-size:1.25rem;">AI-style Drone Orchard Illustrations</h2>
-            <div class="gallery">
-                <!-- Inline SVG #1 -->
-                <figure class="shot" aria-label="Drones over orchard at dusk">
-                    <svg viewBox="0 0 800 600" role="img" aria-labelledby="svg1title svg1desc">
-                        <title id="svg1title">Drones over an apple orchard at dusk</title>
-                        <desc id="svg1desc">Stylized matrix-green drones scanning rows of apple trees with glowing
-                            sensors.</desc>
-                        <defs>
-                            <linearGradient id="g1" x1="0" y1="0" x2="0" y2="1">
-                                <stop offset="0%" stop-color="#0d2016" />
-                                <stop offset="100%" stop-color="#07100b" />
-                            </linearGradient>
-                            <radialGradient id="glow" cx="50%" cy="10%" r="60%">
-                                <stop offset="0%" stop-color="#0aff57" stop-opacity=".25" />
-                                <stop offset="100%" stop-color="transparent" />
-                            </radialGradient>
-                        </defs>
-                        <rect width="800" height="600" fill="url(#g1)" />
-                        <!-- Glow -->
-                        <circle cx="620" cy="120" r="200" fill="url(#glow)" />
-                        <!-- Rows of trees -->
-                        <g fill="none" stroke="#104a2b" stroke-width="2">
-                            <path d="M40,520 Q200,450 360,520 T680,520" />
-                            <path d="M20,560 Q200,490 380,560 T780,560" />
-                        </g>
-                        <!-- Trees -->
-                        <g fill="#0e2c1b" stroke="#17633a" stroke-width="2" opacity=".9">
-                            <!-- repeat simplified tree crowns -->
-                            <circle cx="120" cy="500" r="26" />
-                            <circle cx="220" cy="500" r="24" />
-                            <circle cx="320" cy="500" r="28" />
-                            <circle cx="420" cy="500" r="25" />
-                            <circle cx="520" cy="500" r="27" />
-                            <circle cx="620" cy="500" r="25" />
-                            <circle cx="720" cy="500" r="26" />
-                        </g>
-                        <!-- Drones -->
-                        <g stroke="#0aff57" fill="none" stroke-width="3">
-                            <g transform="translate(260,180)">
-                                <rect x="-18" y="-10" width="36" height="20" rx="4" />
-                                <line x1="-30" y1="-10" x2="-60" y2="-14" />
-                                <line x1="30" y1="-10" x2="60" y2="-14" />
-                                <line x1="-30" y1="10" x2="-60" y2="14" />
-                                <line x1="30" y1="10" x2="60" y2="14" />
-                                <circle cx="0" cy="20" r="3" fill="#0aff57" />
-                            </g>
-                            <g transform="translate(520,120) scale(1.2)">
-                                <rect x="-18" y="-10" width="36" height="20" rx="4" />
-                                <line x1="-30" y1="-10" x2="-60" y2="-14" />
-                                <line x1="30" y1="-10" x2="60" y2="-14" />
-                                <line x1="-30" y1="10" x2="-60" y2="14" />
-                                <line x1="30" y1="10" x2="60" y2="14" />
-                                <circle cx="0" cy="20" r="3" fill="#0aff57" />
-                            </g>
-                            <g transform="translate(420,240) scale(.9)">
-                                <rect x="-18" y="-10" width="36" height="20" rx="4" />
-                                <line x1="-30" y1="-10" x2="-60" y2="-14" />
-                                <line x1="30" y1="-10" x2="60" y2="-14" />
-                                <line x1="-30" y1="10" x2="-60" y2="14" />
-                                <line x1="30" y1="10" x2="60" y2="14" />
-                                <circle cx="0" cy="20" r="3" fill="#0aff57" />
-                            </g>
-                        </g>
-                        <!-- Scan beams -->
-                        <g stroke="#0aff57" stroke-opacity=".25">
-                            <line x1="260" y1="200" x2="260" y2="480" />
-                            <line x1="520" y1="140" x2="520" y2="480" />
-                            <line x1="420" y1="260" x2="420" y2="480" />
-                        </g>
-                    </svg>
-                </figure>
 
-                <!-- Inline SVG #2 -->
-                <figure class="shot" aria-label="Top-down mapping pass">
-                    <svg viewBox="0 0 800 600" role="img" aria-labelledby="svg2title svg2desc">
-                        <title id="svg2title">Top-down mapping pass</title>
-                        <desc id="svg2desc">Grid mission lines with waypoints over orchard tiles; drones following
-                            paths.</desc>
-                        <defs>
-                            <pattern id="tiles" width="80" height="80" patternUnits="userSpaceOnUse">
-                                <rect width="80" height="80" fill="#08140f" />
-                                <circle cx="24" cy="24" r="12" fill="#0f2419" stroke="#17633a" />
-                                <circle cx="56" cy="56" r="12" fill="#0f2419" stroke="#17633a" />
-                            </pattern>
-                        </defs>
-                        <rect width="800" height="600" fill="url(#tiles)" />
-                        <!-- Grid mission -->
-                        <g stroke="#0aff57" stroke-opacity=".5">
-                            <path d="M100,80 L700,80" />
-                            <path d="M100,130 L700,130" />
-                            <path d="M100,180 L700,180" />
-                            <path d="M100,230 L700,230" />
-                            <path d="M100,280 L700,280" />
-                            <path d="M100,330 L700,330" />
-                            <path d="M100,380 L700,380" />
-                            <path d="M100,430 L700,430" />
-                        </g>
-                        <!-- Waypoints -->
-                        <g fill="#0aff57">
-                            <circle cx="120" cy="80" r="3" />
-                            <circle cx="680" cy="80" r="3" />
-                            <circle cx="120" cy="130" r="3" />
-                            <circle cx="680" cy="130" r="3" />
-                            <circle cx="120" cy="180" r="3" />
-                            <circle cx="680" cy="180" r="3" />
-                            <circle cx="120" cy="230" r="3" />
-                            <circle cx="680" cy="230" r="3" />
-                            <circle cx="120" cy="280" r="3" />
-                            <circle cx="680" cy="280" r="3" />
-                            <circle cx="120" cy="330" r="3" />
-                            <circle cx="680" cy="330" r="3" />
-                        </g>
-                        <!-- Drone icons -->
-                        <g stroke="#0aff57" fill="none">
-                            <rect x="260" y="72" width="24" height="16" rx="3" />
-                            <rect x="520" y="172" width="24" height="16" rx="3" />
-                            <rect x="300" y="322" width="24" height="16" rx="3" />
-                        </g>
-                    </svg>
-                </figure>
-
-                <!-- Inline SVG #3 -->
-                <figure class="shot" aria-label="Robotic arm thinning blossoms">
-                    <svg viewBox="0 0 800 600" role="img" aria-labelledby="svg3title svg3desc">
-                        <title id="svg3title">Robotic arm thinning blossoms</title>
-                        <desc id="svg3desc">A simple manipulator with a cutter end-effector approaching a blossom
-                            cluster.</desc>
-                        <rect width="800" height="600" fill="#08140f" />
-                        <!-- Branch -->
-                        <path d="M50,420 C220,390 380,380 560,360" stroke="#145b35" stroke-width="10" fill="none" />
-                        <!-- Blossom cluster -->
-                        <g transform="translate(600,340)">
-                            <circle cx="0" cy="0" r="26" fill="#0f2419" stroke="#1b7a46" stroke-width="3" />
-                            <circle cx="-26" cy="-10" r="14" fill="#0f2419" stroke="#1b7a46" />
-                            <circle cx="26" cy="8" r="12" fill="#0f2419" stroke="#1b7a46" />
-                            <circle cx="10" cy="-24" r="10" fill="#0f2419" stroke="#1b7a46" />
-                        </g>
-                        <!-- Arm -->
-                        <g stroke="#0aff57" stroke-width="4" fill="none">
-                            <circle cx="180" cy="520" r="10" fill="#0aff57" />
-                            <line x1="180" y1="520" x2="280" y2="480" />
-                            <line x1="280" y1="480" x2="420" y2="440" />
-                            <line x1="420" y1="440" x2="560" y2="380" />
-                            <!-- Cutter -->
-                            <g transform="translate(560,380)">
-                                <rect x="0" y="-8" width="36" height="16" rx="3" />
-                                <line x1="36" y1="-8" x2="56" y2="-12" />
-                                <line x1="36" y1="8" x2="56" y2="12" />
-                            </g>
-                        </g>
-                    </svg>
-                </figure>
-            </div>
-            <p class="meta" style="margin-top:.75rem;">
-                Prefer photographic imagery? Replace the SVGs with
-                <code>&lt;img src="images/orchard-drone-1.jpg" alt="..." /&gt;</code> — the layout will adapt
-                automatically.
-            </p>
-        </section>
 
         <section id="contact" class="container">
             <div class="grid">
                 <div class="col-6">
                     <div class="card">
                         <h3>Collaborate</h3>
-                        <p class="meta">Researchers, growers, and sponsors welcome. Pilot sites, datasets, and
-                            safety-first trials are our next steps.</p>
-                        <p>Email: <a class="inline" href="mailto:hello@dronebloom.org">hello@dronebloom.org</a></p>
+                        <p class="meta">
+                            Researchers, growers, and sponsors welcome.
+                            Pilot sites, datasets, and safety-first trials
+                            are our next steps.
+                        </p>
+                        <p>
+                            Email:
+                            <a class="inline" href="mailto:mudanic@mudanic.com">mudanic@mudanic.com</a>
+                        </p>
                     </div>
                 </div>
                 <div class="col-6">
                     <div class="card">
                         <h3>Quick Links</h3>
-                        <ul class="meta" style="padding-left:1rem; margin:.25rem 0;">
-                            <li><a class="inline" href="#tech">Stack &amp; workflow</a></li>
-                            <li><a class="inline" href="#gallery">Illustrations</a></li>
-                            <li><a class="inline" href="#about">Project goals</a></li>
+                        <ul class="meta" style="padding-left: 1rem; margin: 0.25rem 0">
+                            <li>
+                                <a class="inline" href="#tech">Stack &amp; workflow</a>
+                            </li>
+                            <li>
+                                <a class="inline" href="#gallery">Illustrations</a>
+                            </li>
+                            <li>
+                                <a class="inline" href="#about">Project goals</a>
+                            </li>
+                            <li>
+                                <a class="inline" href="https://www.linkedin.com/in/mudanic/" target="_blank"
+                                    rel="noopener noreferrer">LinkedIn</a>
+                            </li>
+                            <li>
+                                <a class="inline" href="https://github.com/TeaChaboshi" target="_blank"
+                                    rel="noopener noreferrer">GitHub</a>
+                            </li>
                         </ul>
-                        <button class="btn secondary" id="installBtn" hidden>Install App</button>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+    <!-- References -->
+    <section id="references" class="container" style="padding-top:0; padding-bottom:0;">
+        <details class="refs"
+            style="max-width:var(--max); margin:0 auto 1rem; color:var(--muted); font-size:.85rem; background: rgba(6,10,8,.35); border:1px solid var(--cardEdge); border-radius:12px; padding:.6rem 1rem;">
+            <summary style="cursor:pointer; color:#a8d9b3;">References</summary>
+            <ol style="margin:.5rem 0 .25rem 1.2rem;">
+                <li style="margin:.25rem 0;">Tessenderlo Kerley, Inc. (Jan. 2013). <em>Sevin® Product Information: Apple
+                        Thinning</em>. Tech. rep. Accessed: 2025-08-27. Tessenderlo Kerley, Inc. URL: <a class="inline"
+                        href="https://www.tessenderlokerley.com/sites/tg_kerley/files/files/2021-08/Sevin_PI_US_Apple%20Thinning_01-2013%20Final.pdf"
+                        target="_blank" rel="noopener">PDF</a>.</li>
+                <li style="margin:.25rem 0;">Mercier Orchards (2025). <em>Mercier Orchards</em>. URL: <a class="inline"
+                        href="https://mercier-orchards.com/" target="_blank"
+                        rel="noopener">https://mercier-orchards.com/</a>. Accessed: 2025-08-27.</li>
+                <li style="margin:.25rem 0;">Wisconsin Division of Extension (2025). <em>Espalier</em>. URL: <a
+                        class="inline" href="https://hort.extension.wisc.edu/articles/espalier/" target="_blank"
+                        rel="noopener">https://hort.extension.wisc.edu/articles/espalier/</a>. Accessed: 2025-08-30.
+                </li>
+            </ol>
+        </details>
+    </section>
 
     <footer>
-        © <span id="year"></span> Drone Bloom. Built with Python-friendly tools, open data, and a lot of 🍏 + 🤖.
+        © <span id="year"></span> Drone Bloom. Built with Python-friendly
+        tools, open data, and a lot of 🍏 + 🤖.
     </footer>
 
-    <script src="./js/main.js"></script>
+    <!-- <script src="./js/main.js"></script> -->
 </body>
 
 </html>

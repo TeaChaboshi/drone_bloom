@@ -1,0 +1,106 @@
+<!-- Inline SVG #3 -->
+<figure class="shot" aria-label="3D drone robotarium testbed">
+    <svg viewBox="0 0 800 600" role="img" aria-labelledby="rbtmTitle rbtmDesc">
+        <title id="rbtmTitle">3D Drone Robotarium Testbed</title>
+        <desc id="rbtmDesc">An indoor 3D flight arena with motion-capture beacons, drones, and safety netting—used for
+            multi-agent experiments.</desc>
+        <defs>
+            <linearGradient id="bg-rob" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#0a1912" />
+                <stop offset="100%" stop-color="#07100b" />
+            </linearGradient>
+            <radialGradient id="rGlow" cx="50%" cy="10%" r="60%">
+                <stop offset="0%" stop-color="#0aff57" stop-opacity=".18" />
+                <stop offset="100%" stop-color="transparent" />
+            </radialGradient>
+        </defs>
+        <style>
+            @keyframes bob {
+
+                0%,
+                100% {
+                    transform: translateY(0);
+                }
+
+                50% {
+                    transform: translateY(-6px);
+                }
+            }
+
+            @keyframes pulse {
+
+                0%,
+                100% {
+                    opacity: .25;
+                }
+
+                50% {
+                    opacity: .9;
+                }
+            }
+
+            .drone {
+                animation: bob 2.6s ease-in-out infinite;
+            }
+
+            .b1 {
+                animation-delay: .0s;
+            }
+
+            .b2 {
+                animation-delay: .6s;
+            }
+
+            .b3 {
+                animation-delay: 1.2s;
+            }
+
+            .beacon {
+                animation: pulse 1.8s ease-in-out infinite;
+            }
+        </style>
+
+
+        <rect width="800" height="600" fill="url(#bg-rob)" />
+        <circle cx="560" cy="120" r="220" fill="url(#rGlow)" />
+
+
+        <!-- Arena cube -->
+        <g stroke="#17633a" stroke-width="2" fill="none" opacity=".9">
+            <rect x="140" y="120" width="520" height="360" rx="12" />
+            <!-- grid lines -->
+            <g opacity=".35">
+                <path d="M180,160 H620 M180,220 H620 M180,280 H620 M180,340 H620 M180,400 H620" />
+                <path
+                    d="M220,140 V460 M280,140 V460 M340,140 V460 M400,140 V460 M460,140 V460 M520,140 V460 M580,140 V460" />
+            </g>
+        </g>
+
+
+        <!-- Mocap beacons at corners -->
+        <g fill="#0aff57" opacity=".7">
+            <circle class="beacon" cx="160" cy="140" r="5" />
+            <circle class="beacon" cx="680" cy="140" r="5" />
+            <circle class="beacon" cx="160" cy="460" r="5" />
+            <circle class="beacon" cx="680" cy="460" r="5" />
+        </g>
+
+
+        <!-- Drones -->
+        <g stroke="#0aff57" fill="none" stroke-width="3">
+            <g class="drone b1" transform="translate(260,220)">
+                <rect x="-12" y="-8" width="24" height="16" rx="3" />
+                <line x1="-20" y1="-8" x2="-36" y2="-12" />
+                <line x1="20" y1="-8" x2="36" y2="-12" />
+                <line x1="-20" y1="8" x2="-36" y2="12" />
+                <line x1="20" y1="8" x2="36" y2="12" />
+                <circle cx="0" cy="18" r="2" fill="#0aff57" />
+            </g>
+            <g class="drone b2" transform="translate(480,300)">
+                <rect x="-12" y="-8" width="24" height="16" rx="3" />
+                <line x1="-20" y1="-8" x2="-36" y2="-12" />
+                <line x1="20" y1="-8" x2="36" y2="-12" />
+                <line x1="-20" y1="8" x2="-36" y2="12" />
+                <line x1="20" y1="8" x2="36" y2="12" />
+                <circle cx="0" cy="18" r="2" fill="#0aff57" />
+</figure>

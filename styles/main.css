@@ -204,6 +204,10 @@ h1 .accent {
     grid-column: span 8;
 }
 
+.col-12 {
+    grid-column: span 12;
+}
+
 @media (max-width: 920px) {
 
     .col-6,
